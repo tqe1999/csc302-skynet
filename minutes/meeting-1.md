@@ -33,7 +33,7 @@ Absent: None
 
 ### Data source
 
-* We all want to use familiar technology as per the goals talked about in the first portion of the meeting.</li><li>All three of us have experience with **Python**. From our experience using **Python**, **Python** has a wide array of data processing libraries, as well as data visualization libraries (for instance, this library for generating graphs called [plotly](https://dash.plotly.com/) ).
+* We all want to use familiar technology as per the goals talked about in the first portion of the meeting.All three of us have experience with **Python**. From our experience using **Python**, **Python** has a wide array of data processing libraries, as well as data visualization libraries (for instance, this library for generating graphs called [plotly](https://dash.plotly.com/) ).
 * We are also familiar with **JavaScript**. Henry favors **JavaScript** more. Qi En has more backend experience.
 * Based off the above factors, a preliminary idea for the techstack will be the following:
     * Containerization: **Docker** is a strong contender due to its strong adoption rate, strong ecosystem of prebaked images to build upon, highly portability, availability of server-less hosting platforms, and it's lightweight nature compared to VMs like **Vagrant**. Team members are familiar with **Docker**. Docker-compose is a simple multi-container orchestration tool which for our purposes, will be used to run a handful containers on a single host. **Docker** also simplifies installation and setup; a requirement for this project since installation and setup must be performable with a single step. We don't think anything beyond the aforementioned, such as kubernetes, will be necessary for our purposes.
