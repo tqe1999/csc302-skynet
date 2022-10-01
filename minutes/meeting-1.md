@@ -45,13 +45,13 @@ Absent: None
              * DynamoDB
              * Firestore
              * Redis
-      * Backend (API): Henry only knows express.js. The rest know flask/django. We decided on python to diversify our codebase, as different team members have varying skill levels on frontend and backend. We will decide on the framework in our next meeting after we decide on which database to use.
-          * Testing framework: TBD, no decision on framework yet.
-      * Backend (data pipeline): Python since the API server will also use python. This simplifies integration.
-          * Testing framework: TBD, no decision on framework yet.
-      * Code formatter: Black (python), prettier (js) - Industry standard code formatters enforcing code formatting best practices, but configurable to meet our use cases
-      * Frontend: JS, see reason for backend (API). React has a strong ecosystem of components, good support (documentation/community discussions). Plus, we want our frontend to have a modern look and feel. This means that the frontend must be dynamic, and not static. Using a framework like React is a natural choice. We decided not to use other frameworks such as Angular since we have less exposure to it. Using React, a framework which we are all familiar with, allows us to save the time it takes towards acquiring a new framework and use that time towards development.
-          * Jest (react only): allows testing and mocking
+    * Backend (API): Henry only knows express.js. The rest know flask/django. We decided on python to diversify our codebase, as different team members have varying skill levels on frontend and backend. We will decide on the framework in our next meeting after we decide on which database to use.
+        * Testing framework: TBD, no decision on framework yet.
+    * Backend (data pipeline): Python since the API server will also use python. This simplifies integration.
+        * Testing framework: TBD, no decision on framework yet.
+    * Code formatter: Black (python), prettier (js) - Industry standard code formatters enforcing code formatting best practices, but configurable to meet our use cases
+    * Frontend: JS, see reason for backend (API). React has a strong ecosystem of components, good support (documentation/community discussions). Plus, we want our frontend to have a modern look and feel. This means that the frontend must be dynamic, and not static. Using a framework like React is a natural choice. We decided not to use other frameworks such as Angular since we have less exposure to it. Using React, a framework which we are all familiar with, allows us to save the time it takes towards acquiring a new framework and use that time towards development.
+        * Jest (react only): allows testing and mocking
 
 ### Preliminary plan
 
