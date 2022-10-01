@@ -41,27 +41,27 @@ Absent: None
         * SQL
             * Postgres
         * NoSQL
-             * MongoDB
-             * DynamoDB
-             * Firestore
-             * Redis
-      * Backend (API): We decided on **Python** for our entire backend to diversify our codebase, as different team members have varying skill levels on frontend and backend. In terms of API frameworks, Henry only knows **Express.js** which is a **JavaScript** framework. The rest know **Flask/Django** which are **Python** frameworks. Since **Python** is being used for the backend, one of **Flask** or **Django** seems like the natural choice.
-          * Testing framework for backend API: TBD, no decision on framework yet.
-      * Backend (data pipeline): **Python** since the API server will also use python. This simplifies integration.
-          * Testing framework for data pipeline API: TBD, no decision on framework yet.
-      * Code formatter: **Black** for **Python** and **Prettier** for **JavaScript**; theses are industry standard code formatters for enforcing code formatting best practices, and are configurable to meet our use cases
-      * Frontend: **JavaScript**, see reason for backend (API). We will also be using the **JavaScript** framework **React**.
-	      * We want our frontend to have a modern look and feel. This means that the frontend must be dynamic, and not static. Using a framework like **React** is a natural choice.
-	      * The question then becomes, why not use other frameworks which can also provide that modern look and feel such as **Angular**?
-		  * **React** has a strong ecosystem of components, good support (documentation/community discussions). Plus,  We decided not to use other frameworks such as **Angular** since we have less exposure to it. Using **React**, a framework which we are all familiar with, allows us to save the time it takes towards acquiring a new framework and use that time towards development.
-          * Testing framework: **Jest**, allows testing and mocking of **React** applications
+            * MongoDB
+            * DynamoDB
+            * Firestore
+            * Redis
+    * Backend (API): We decided on **Python** for our entire backend to diversify our codebase, as different team members have varying skill levels on frontend and backend. In terms of API frameworks, Henry only knows **Express.js** which is a **JavaScript** framework. The rest know **Flask/Django** which are **Python** frameworks. Since **Python** is being used for the backend, one of **Flask** or **Django** seems like the natural choice.
+        * Testing framework for backend API: TBD, no decision on framework yet.
+    * Backend (data pipeline): **Python** since the API server will also use python. This simplifies integration.
+        * Testing framework for data pipeline API: TBD, no decision on framework yet.
+    * Code formatter: **Black** for **Python** and **Prettier** for **JavaScript**; theses are industry standard code formatters for enforcing code formatting best practices, and are configurable to meet our use cases
+    * Frontend: **JavaScript**, see reason for backend (API). We will also be using the **JavaScript** framework **React**.
+	    * We want our frontend to have a modern look and feel. This means that the frontend must be dynamic, and not static. Using a framework like **React** is a natural choice.
+	    * The question then becomes, why not use other frameworks which can also provide that modern look and feel such as **Angular**?
+		* **React** has a strong ecosystem of components, good support (documentation/community discussions). Plus,  We decided not to use other frameworks such as **Angular** since we have less exposure to it. Using **React**, a framework which we are all familiar with, allows us to save the time it takes towards acquiring a new framework and use that time towards development.
+        * Testing framework: **Jest**, allows testing and mocking of **React** applications
 
 ### Preliminary plan
 
 * Milestones (the first milestone only, the rest TBD):
     * Before assignment 1 submission: decide on data source, finalize choices on database, testing, and frameworks.
- * Responsibilities for each milestone:
- * Immediate next actions:
-     * Setup repository folders
-     * Research about data sources and how to integrate them
-     * Monitor assignment 1 due date
+* Responsibilities for each milestone:
+* Immediate next actions:
+    * Setup repository folders
+    * Research about data sources and how to integrate them
+    * Monitor assignment 1 due date
