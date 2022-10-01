@@ -31,7 +31,7 @@ Absent: None
 * Qi En suggested using financial data: identifying correlations between stock prices, and correlations between stock market and overall. 
 **![](https://lh5.googleusercontent.com/g72rzAEF5U3ecubnEimrGvdtJSPY2RLzfZvdIiPV6Pvlz9IAe0-ObBflTdmbm1m9SlkyEGoxDsu3j1fmY6FMQ1OKTJlaUQi-F4otLIBB5Ke8Jfw-bkJDGHrmMu1Xe6eSYlTEER1hPW_fo16LrCXFnHIeGkZG02PgYbf8wzEQ5w8b91uX4iaqGk9yog)**
 
-### Data source
+### Tech Stack
 
 * We all want to use familiar technology as per the goals talked about in the first portion of the meeting.All three of us have experience with **Python**. From our experience using **Python**, **Python** has a wide array of data processing libraries, as well as data visualization libraries (for instance, this library for generating graphs called [plotly](https://dash.plotly.com/) ).
 * We are also familiar with **JavaScript**. Henry favors **JavaScript** more. Qi En has more backend experience.
