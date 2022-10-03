@@ -1,7 +1,5 @@
 #!/bin/sh
 
-# Docker install with apt-get
-
 dockerInstallApt () {
   sudo apt-get remove docker docker-engine docker.io containerd runc
   sudo apt-get update
@@ -10,7 +8,7 @@ dockerInstallApt () {
     curl \
     gnupg \
     lsb-release
-  sudo mkdir -p /etc/apt/keyrings
+  sudo mkdir -p /etc/apt/keyrings-f
   curl -fsSL https://download.docker.com/linux/ubuntu/gpg | sudo gpg --dearmor -o /etc/apt/keyrings/docker.gpg
   echo \
   "deb [arch=$(dpkg --print-architecture) signed-by=/etc/apt/keyrings/docker.gpg] https://download.docker.com/linux/ubuntu \
