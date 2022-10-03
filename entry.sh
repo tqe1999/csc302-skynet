@@ -40,4 +40,9 @@ dockerInstall() {
   dockerInstallApt || dockerInstallYum || echo "only apt and yum supported"
 }
 
+dockerComposeUp() {
+  docker-compose up --build
+}
+
 dockerInstall
+dockerComposeUp
