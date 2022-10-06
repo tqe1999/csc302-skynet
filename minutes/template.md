@@ -14,11 +14,11 @@ Discuss | Implementation details
 Decide | Workload distribution, next steps
 
 ## Discussion Items
-Item | Description
---- | ---
-Something | We decided x because y, z
+Item | Decision | Considerations
+--- | --- | ---
+Something | We decided x | Because y, z
 
 ## Action Items
-Item | By | Due | Status
---- | --- | --- | ---
-Project | Me | Yesterday | ❌/✅
+Item | By | Due
+--- | --- | --- 
+Project | Me | Yesterday 
