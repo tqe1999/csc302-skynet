@@ -5,6 +5,11 @@ services:
     ports: 
       - "8000:8000"
 
+  app:
+    build: app
+    ports:
+      - "3000:3000"
+
   test:
     build: test/.
     depends_on:
