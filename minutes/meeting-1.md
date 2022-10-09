@@ -17,13 +17,13 @@ Absent: None
 
 ## Meeting Items Discussed
 
-### Discuss the availability, experience, workload, and goals of each team member
+### [Discuss] Discuss the availability, experience, workload, and goals of each team member
 
 * Henry: Availability after 4 p.m every day as he is only taking this course. Experience: frontend/backend with JavaScript mainly, but have only used python in academic settings. Have had coop experience in the industry primarily with JavaScript/react. Goal: learn something new, but with familiar technology so as to not spend too much time learning the techstack; to deliver the product on-time.
 * Chaoyu: 5 courses, available W R F, experience in webdev, google cloud. Goal: same as Henry.
 * Qi En: 5 courses, available tues and thurs. Experience in full stack, focus on backend, machine learning, devops, and infrastructre
 
-### Data source
+### [Discuss] Data source
 
 * General ideas for now, but will elaborate in the next meeting
 * Chaoyu suggested the Toronto crime dataset located at the [Toronto Police Service Public Safety Data Portal](https://data.torontopolice.on.ca/). This data is not live, thus more reliable than an API.
@@ -32,7 +32,7 @@ Absent: None
 
 ![](https://lh5.googleusercontent.com/g72rzAEF5U3ecubnEimrGvdtJSPY2RLzfZvdIiPV6Pvlz9IAe0-ObBflTdmbm1m9SlkyEGoxDsu3j1fmY6FMQ1OKTJlaUQi-F4otLIBB5Ke8Jfw-bkJDGHrmMu1Xe6eSYlTEER1hPW_fo16LrCXFnHIeGkZG02PgYbf8wzEQ5w8b91uX4iaqGk9yog)
 
-### Tech Stack
+### [Discuss] Tech Stack
 
 * **The following is not the final teck stack, it is a preliminary discussion of which software to use and their justifications.  It is by no means final**
 * We all want to use familiar technology as per the goals talked about in the first portion of the meeting.  All three of us have experience with **Python**. From our experience using **Python**, **Python** has a wide array of data processing libraries, as well as data visualization libraries (for instance, this library for generating graphs called [plotly](https://dash.plotly.com/) ).
@@ -58,7 +58,7 @@ Absent: None
 		* **React** has a strong ecosystem of components, good support (documentation/community discussions). Plus,  We decided not to use other frameworks such as **Angular** since we have less exposure to it. Using **React**, a framework which we are all familiar with, allows us to save the time it takes towards acquiring a new framework and use that time towards development.
         * Testing framework: **Jest**, allows testing and mocking of **React** applications
 
-### Preliminary plan
+### [Discuss] Preliminary plan
 
 * Milestones (the first milestone only, the rest TBD):
     * Before assignment 1 submission: decide on data source, finalize choices on database, testing, and frameworks.
