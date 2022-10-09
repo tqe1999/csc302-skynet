@@ -64,12 +64,6 @@ Absent: None
 
 * Team members disucessed the teck stack, and the justifications of using the various technologies.  Much of it is a re-hash of what is already on [this document](https://github.com/tqe1999/csc302-skynet/blob/main/documentation/tech-stack.md) so for the sake of brevity, please refer to that document
 
-| Item        | Decision                             | Considerations                                                                                                                                                                            |
-| ----------- | ------------------------------------ | ----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
-| Bash/Docker | Decided to attempt to install Docker | Docker critical to ensuring repeatable deployment from images across environments, can bootstrap install from shell script, available across most Linux distros                           |
-| Vagrant     | Defer pending research               | Might be useful for testing on multiple platforms, but additional development overhead and may not be able to run using nested virtualization                                             |
-| Dataset     | Use financial data                   | Simpler format and intuitive visualization compared to alternative suggestions like map of crimes. Might need to clarify doubts more often as not all members knowledgeable about finance |
-
 ### [Decide] Workload distribution, next steps
 
 | Item                              | Assigned to   | Due             |
