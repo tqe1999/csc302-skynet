@@ -8,12 +8,12 @@ Absent: None
 
 ## Agenda
 
-| Meeting Item                                                                  | Description                                                                                                                                                                                                                    |
-| ----------------------------------------------------------------------------- | ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------ |
-| Discuss the availability, experience, workload, and goals of each team member | Each member will provide their availability, experience, workload, and what we want to contribute/attain from this project. knowing these information will allow us to create realistic goals and expectations for the project |
-| Project data set/data source to use                                           | Each member will provide their idea(s) for which data set to use for the project                                                                                                                                               |
-| Tech stack                                                                    | Discuss the tech stack with the factors discussed in the first agenda item kept in mind                                                                                                                                        |
-| Timeline                                                                      | Workload distribution, next steps                                                                                                                                                                                              |
+| Meeting Item Type | Meeting Item | Description |
+| ----------------- | ------------ | ----------- |
+|Discuss | Discuss the availability, experience, workload, and goals of each team member | Each member will provide their availability, experience, workload, and what we want to contribute/attain from this project. knowing these information will allow us to create realistic goals and expectations for the project|
+|Discuss | Project data set/data source to use | 	Each member will provide their idea(s) for which data set to use for the project |
+|Discuss | Tech stack | Discuss the tech stack with the factors discussed in the first agenda item kept in mind |
+|Discuss | Timeline | Workload distribution, next steps |
 
 ## Meeting Items Discussed
 
@@ -28,8 +28,9 @@ Absent: None
 * General ideas for now, but will elaborate in the next meeting
 * Chaoyu suggested the Toronto crime dataset located at the [Toronto Police Service Public Safety Data Portal](https://data.torontopolice.on.ca/). This data is not live, thus more reliable than an API.
 * Henry suggested taking soccer or basketball data to predict which team will win next.
-* Qi En suggested using financial data: identifying correlations between stock prices, and correlations between stock market and overall. 
-**![](https://lh5.googleusercontent.com/g72rzAEF5U3ecubnEimrGvdtJSPY2RLzfZvdIiPV6Pvlz9IAe0-ObBflTdmbm1m9SlkyEGoxDsu3j1fmY6FMQ1OKTJlaUQi-F4otLIBB5Ke8Jfw-bkJDGHrmMu1Xe6eSYlTEER1hPW_fo16LrCXFnHIeGkZG02PgYbf8wzEQ5w8b91uX4iaqGk9yog)**
+* Qi En suggested using financial data: identifying correlations between stock prices, and correlations between stock market and overall. He says a picture similar to the one below may be generated with the data
+
+![](https://lh5.googleusercontent.com/g72rzAEF5U3ecubnEimrGvdtJSPY2RLzfZvdIiPV6Pvlz9IAe0-ObBflTdmbm1m9SlkyEGoxDsu3j1fmY6FMQ1OKTJlaUQi-F4otLIBB5Ke8Jfw-bkJDGHrmMu1Xe6eSYlTEER1hPW_fo16LrCXFnHIeGkZG02PgYbf8wzEQ5w8b91uX4iaqGk9yog)
 
 ### Tech Stack
 
