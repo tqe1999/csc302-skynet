@@ -46,7 +46,7 @@ Absent: None
         * The idea is the most unique of the 3.  Using the stock data, we can pick **n** number of stocks, and  see how tightly each stock tracks with each other
             * This may be presented as a **n** by **n** grid, like the one below ![Drag Racing](https://camo.githubusercontent.com/90817b50c56628f04ff85c47fe26b0baf71e7a0971b2b8279edffa3cc9d20094/68747470733a2f2f6c68352e676f6f676c6575736572636f6e74656e742e636f6d2f673732727a414546355533656375626e45696d72477664744a53505932524c7a665a7664496950563650766c7a39494165302d4f6242666c54646d626d316d39536c6b7945476f78447375336a31666d5936464d51314f4b544a6c615551692d46346f744c494242354b65384a66772d626b4a444748726d4d75315865366553596c54454552316850575f666f31364c724358466e484965476b5a473032506759626638777a4551357738623931755834696171476b39796f67)
             * The proposed imlementation seems straightforward, as the **matplotlib** library for **Python** is capable of creating a picture like the above
-        *Cons:
+        * Cons:
             * Many APIs for stocks are private, and requires an API key.  We don't have experience with packaing API keys within our deliverables and could prove to be a challenge
             * Henry and Chaoyu is not as financial-savvy as Qi En, so Qi En might need to explain certain concepts
 * All three members voted in favor of using Qi En's dataset
