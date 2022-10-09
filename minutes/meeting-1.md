@@ -1,12 +1,12 @@
 # CSC302 Meeting Minutes - September 25, 2022
 
-# Attendance
+## Attendance
 
-Note Taker: Henry (Kuan-Te)
-Present: Henry (Kuan-Te), Chaoyu, Qi En
+Taken by: Henry (Kuan-Te)
+Present: Qi En, Chaoyu
 Absent: None
 
-# Agenda
+## Agenda
 
 | Meeting Item                                                                  | Description                                                                                                                                                                                                                    |
 | ----------------------------------------------------------------------------- | ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------ |
@@ -15,7 +15,7 @@ Absent: None
 | Tech stack                                                                    | Discuss the tech stack with the factors discussed in the first agenda item kept in mind                                                                                                                                        |
 | Timeline                                                                      | Workload distribution, next steps                                                                                                                                                                                              |
 
-# Meeting Items Discussed
+## Meeting Items Discussed
 
 ### Discuss the availability, experience, workload, and goals of each team member
 
