@@ -21,4 +21,5 @@ urlpatterns = [
     path("admin/", admin.site.urls),
     # Hello, world!
     path("", views.index, name="index"),
+    path("correlation/", views.getCorrelationGraph, name="correlation-graph"),
 ]
