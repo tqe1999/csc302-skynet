@@ -21,6 +21,6 @@ urlpatterns = [
     path("admin/", admin.site.urls),
     # Hello, world!
     path("", views.index, name="index"),
-    # Hello, world!
+    # API endpoint for getting a list of stocks
     path("stocks/", views.getStockList, name="stocks"),
 ]
