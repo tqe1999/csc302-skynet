@@ -1,0 +1,18 @@
+name: Test API
+on:
+  push:
+    paths:
+      - "api/**"
+      - "test/**"
+
+jobs:
+  test:
+    runs-on: ubuntu-latest
+    steps:
+      - names: Checkout
+        uses: actions/checkout@v3
+      - name: Build
+        run: docker compose build test
+      - name: Test
+        run: docker compose up test
+
