@@ -4,8 +4,11 @@ services:
     build: api/.
     ports: 
       - "8000:8000"
+    healthcheck:
+      test: curl --fail http://localhost:8000 || exit 1   
 
   test:
     build: test/.
     depends_on:
-      - api
+      api:
+        condition: service_healthy
