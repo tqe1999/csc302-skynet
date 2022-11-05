@@ -8,12 +8,19 @@ services:
       - "database.env"
     volumes: 
       - db:/var/lib/postgresql/data
+  load_data:
+    build: load_data/.
+    env_file:
+      - "database.env"
+    depends_on:
+    - db
   api:
     build: api/.
     ports: 
       - "8000:8000"
     depends_on:
       - db
+      - load_data
     healthcheck:
       test: curl --fail http://localhost:8000 || exit 1   
 
