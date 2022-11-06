@@ -1,4 +1,4 @@
-# CSC302 Meeting Minutes - 18/10/2022
+# CSC302 Meeting Minutes - 28/10/2022
 
 ## Attendance
 Taken by: Henry (Kuan-Te)
