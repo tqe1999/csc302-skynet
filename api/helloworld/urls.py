@@ -23,6 +23,7 @@ urlpatterns = [
     path("", views.index, name="index"),
     # API endpoint for getting a list of stocks
     path("stocks/", views.getStockList, name="stocks"),
+    # API endpoint for getting a picture based off of the name of two stocks
     path("correlation/", views.getCorrelationGraph, name="correlation-graph"),
     
 ]
