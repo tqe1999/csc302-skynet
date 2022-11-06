@@ -1,29 +1,42 @@
-# CSC302 Meeting Minutes - 18/10/2022
+# CSC302 Meeting Minutes - October 18, 2022
 
 ## Attendance
+
 Taken by: Chaoyu
 Present: Henry (Kuan-Te), Qi En
 Absent: None
 
 ## Agenda
-Item | Description
---- | ---
-Review | Run through past week's progress
-Decide | Choose financial dataset
-Discuss | Implementation details
-Decide | Workload distribution, next steps
 
-## Discussion Items
-Item | Decision | Considerations
---- | --- | ---
-Financial dataset | Decided on Nasdaq data link, via tha Quandl package. | Nasdaq is a reputable provider of financial data, and is a large company which is less likely to become defunct or have its APIs go down. It allows access to the API without requiring an API key, removing the need to handle secret management and simplifying the development process. In comparison, other APIs either require an API key to make requests at all, or severely rate limit requests. Nasdaq also provides a python package, Quandl, that simplifies access to that dataset, as opposed to many other sources which require making raw http requests.
-API key | Prompt user for API key if required | Chaoyu raised concerns about including the API key if any with the docker image, since this poses security issues and would result in the application being rate limited in API requests across all its instantiations. As such, if an API key is required, we would prompt the user for the API key while building the application. This would typically be done via creating an account directly with the data provider, but we would provide it in the github repo as well for the tester's convenience.
+| Meeting Item Type | Meeting Item                 | Description                                                                              |
+| ----------------- | ---------------------------- | ---------------------------------------------------------------------------------------- |
+| Review            | Weekly review                | Discuss blockers and progress since the last meeting                                     |
+| Decide            | Decide financial data source | We've decided on which type of dataset to use, now it's time to decide on a specific API |
+| Decide            | Assign work                  | Assign work to each group member for this assignment period                              |
 
-## Action Items
-Item | By | Due
---- | --- | --- 
-Integration with Nasdaq API | Qi En | 04/11/2022
-Save data to local database | Qi En | 04/11/2022
-Design basic API routes | Henry | 04/11/2022
-Convert tests to pytest | Henry | 04/11/2022
-Github actions CI pipeline for unit testing | Chaoyu | 04/11/2022
+## Meeting Items Discussed
+
+### [Review] Weekly review
+
+- All members have done some preliminary research on which API to use
+
+### [Decide] Dataset
+
+- By way of a rigorous discussion, the API we will use will be the [NASAQ API](https://data.nasdaq.com/publishers/QDL)
+- This API has several advantages:
+  - It should have good reliability and uptime due to it being supported by a reputable company (NASDAQ)
+  - The API may be accessed without a secret key
+    - This eliminates secret mangament, which was one of our concerns
+  - The [Quandl library for Python](https://github.com/quandl/quandl-python), which is tailored for this API, makes the data easily query-able. This can’t be said about other APIs
+  - There are many alternative stocks API choices. However, our project has limited scope and performance requirements, so there isn’t much need to choose carefully besides making sure that our choice would be reliable
+    - In addition, the API provides sufficient fields for us to do our calculations
+
+### [Decide] Assign work
+
+| Item                                                                | Assigned to | Due              |
+| ------------------------------------------------------------------- | ----------- | ---------------- |
+| Integration with Nasdaq API and caching responses in local database | Qi En       | November 4, 2022 |
+| Implement API routes                                                | Henry       | November 4, 2022 |
+| Convert tests to PyTest, implement API tests                        | Henry       | November 4, 2022 |
+| Implement Github Actions CI pipeline for automatic running of tests | Chaoyu      | November 4, 2022 |
+| Make detailed plans and development tasks                           | Everybody   | November 4, 2022 |

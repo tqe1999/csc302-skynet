@@ -24,6 +24,11 @@ services:
     healthcheck:
       test: curl --fail http://localhost:8000 || exit 1   
 
+  app:
+    build: app
+    ports:
+      - "3000:3000"
+
   test:
     build: test/.
     depends_on:
