@@ -31,11 +31,11 @@ Finally, we tried our best to make sure every feature within each milestone has 
 		* One API route for getting a list of stocks
 		* One API route for getting a picture of a correlation graph, based on 2 stocks
 		* **These have been completed**
-	*In addition, the first API needs to tested for the following in pytest:
+	* In addition, the first API needs to tested for the following in pytest:
 		* Check if the API is online for a valid query (status code 200)
 		* Check if the API returns a list of stocks for a valid query
 		* **These have been completed**
-	*In addition, the second API needs to be tested for the following  in pytest:
+	* In addition, the second API needs to be tested for the following  in pytest:
 		* Check if the API is online for a valid query (status code 200)
 		* Check if the API returns a picture for a valid query
 		* Check if the API throws an error gracefully for an invalid query
