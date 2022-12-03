@@ -18,6 +18,8 @@ services:
     build: api/.
     ports: 
       - "8000:8000"
+    env_file:
+      - "database.env"
     depends_on:
       - db
       - load_data
