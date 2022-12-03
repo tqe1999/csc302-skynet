@@ -8,8 +8,16 @@ export class Stockbar extends Component {
         super(props);
         this.state = {
             visibleLeft: true,
-            stocksInPlay: 2
+            stocksInPlay: 2,
+            stocks: []
         };
+    }
+
+    componentDidMount() {
+        fetch("http://localhost:8000/stocks")
+            .then(res => res.json())
+            .then(stocks => this.setState({stocks}))
+            .catch(error => console.error(error))
     }
 
     stockComponent() {
