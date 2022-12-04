@@ -24,7 +24,7 @@ services:
       - db
       - load_data
     healthcheck:
-      test: curl --fail http://localhost:8000 || exit 1   
+      test: curl --fail http://api:8000 || exit 1   
 
   app:
     build: app
