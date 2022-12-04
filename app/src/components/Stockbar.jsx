@@ -9,7 +9,8 @@ export class Stockbar extends Component {
         this.state = {
             visibleLeft: true,
             stocksInPlay: 2,
-            stocks: []
+            stocks: [],
+            selectedStocks: []
         };
     }
 
@@ -22,15 +23,15 @@ export class Stockbar extends Component {
 
     stockComponent() {
         const rows = [];
+        const stockOptions = this.state.stocks.map(s => ({label: s, value: s}))
 
-        for (let i = 0; i < this.state.stocksInPlay; i++) {
+        for (let i = 0; i < this.state.selectedStocks.length; i++) {
             // note: we are adding a key prop here to allow react to uniquely identify each
             // element in this array. see: https://reactjs.org/docs/lists-and-keys.html
             rows.push(<div key={i} className='stockComponent'>
-                <Dropdown value={this.state.selectedCountry} options={this.countries} onChange={this.onCountryChange} optionLabel="name" filter showClear filterBy="name" placeholder="Select a Stock"
-                    valueTemplate={this.selectedCountryTemplate} itemTemplate={this.countryOptionTemplate} />
+                <Dropdown value={this.state.selectedStocks[i]} options={stockOptions} placeholder="Select a Stock"/>
                 <Button icon="pi pi-times" className="p-button-rounded p-button-danger p-button-text" aria-label="Cancel" onClick={
-                    () => this.setState(state => { return { stocksInPlay: state.stocksInPlay - 1 } })
+                    () => this.setState(state => ({selectedStocks: state.selectedStocks.filter((_, id) => id !== i)}))
                 } />
             </div>);
         }
@@ -51,7 +52,7 @@ export class Stockbar extends Component {
                 <h1>Stock Picker</h1>
                 {this.stockComponent()}
                 <Button label="Add Stock +" onClick={
-                    () => this.setState(state => { return { stocksInPlay: state.stocksInPlay + 1 } })
+                    () => this.setState(state => ({selectedStocks: [...state.selectedStocks, null]}))
                 } />
             </div>
         );
