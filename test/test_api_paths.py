@@ -13,12 +13,12 @@ def test_positive_stocklist():
 
 # Tests if the correlation API is online
 def test_positive_correlation_online():
-    res = requests.get("http://api:8000/correlation?stock1=stock1&stock2=stock2")
+    res = requests.get("http://api:8000/correlation?stock1=A&stock2=AAPL")
     assert res.status_code == 200
 
 # Tests if the correlation API returns a picture
 def test_positive_correlation_return_type():
-    res = requests.get("http://api:8000/correlation?stock1=stock1&stock2=stock2")
+    res = requests.get("http://api:8000/correlation?stock1=A&stock2=AAPL")
     assert res.headers['Content-Type'] == 'image/png'
 
 # Tests if the correlation API errors out if parameters aren't provided
