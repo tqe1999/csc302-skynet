@@ -1,7 +1,6 @@
 # requirements.txt file
 Django==2.2.3
 psycopg2==2.9.5
-numpy==1.23.5
 pandas==1.5.2
 matplotlib==3.6.2
 seaborn==0.12.1

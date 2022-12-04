@@ -1,4 +1,4 @@
-from django.http import HttpResponse, FileResponse, JsonResponse
+from django.http import HttpResponse, FileResponse, JsonResponse, HttpResponseBadRequest
 from helloworld.correlation import *
 from helloworld.models import Stocks
 
@@ -13,20 +13,22 @@ def getStockList(request):
 
 # This endpoint returns an image, given the name of two stocks
 def getCorrelationGraph(request):
-    stock1=request.GET["stock1"]
-    stock2=request.GET["stock2"]
     
+    stocks = []
+
     if request.method == "POST":
         print(request.POST)
         stocks = request.POST
-        print(f"stocks: {stocks}")
+    elif request.method == "GET":
+        stocks.append(request.GET["stock1"])
+        stocks.append(request.GET["stock2"])
+    else:
+        return HttpResponseBadRequest()
 
 
-    df = get_df(["ABCO", "AAP", "ABG", "AAL", "ABBV", "AAWW", "AA", "ABCB", "ABMD", "AAN", "AAON", "AAOI", "AAT", "A", "ABAX", "ABC", "AAPL", "AAMC", "ABFS", "ABM"])
+    df = get_df(stocks)
     corr_df = get_correlation(df)
     img = render_matrix(corr_df)
 
-    # img = open(img_file, 'rb')
-    # img = open(img.read(), 'rb')
     response = FileResponse(img, content_type="image/png")
     return response
