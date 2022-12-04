@@ -21,6 +21,16 @@ export class Stockbar extends Component {
             .catch(error => console.error(error))
     }
 
+    updateSelection(id, value) {
+        const selected = [...this.state.selectedStocks]
+        selected[id] = value
+        this.setState({selectedStocks: selected})
+        // If all dropdowns are filled, fetch graph
+        if (selected.reduce((x, y) => x && y)) {
+
+        }
+    }
+
     stockComponent() {
         const rows = [];
         const stockOptions = this.state.stocks.map(s => ({label: s, value: s}))
@@ -29,7 +39,7 @@ export class Stockbar extends Component {
             // note: we are adding a key prop here to allow react to uniquely identify each
             // element in this array. see: https://reactjs.org/docs/lists-and-keys.html
             rows.push(<div key={i} className='stockComponent'>
-                <Dropdown value={this.state.selectedStocks[i]} options={stockOptions} placeholder="Select a Stock"/>
+                <Dropdown value={this.state.selectedStocks[i]} options={stockOptions} onChange={e => this.updateSelection(i, e.value)} placeholder="Select a Stock"/>
                 <Button icon="pi pi-times" className="p-button-rounded p-button-danger p-button-text" aria-label="Cancel" onClick={
                     () => this.setState(state => ({selectedStocks: state.selectedStocks.filter((_, id) => id !== i)}))
                 } />
