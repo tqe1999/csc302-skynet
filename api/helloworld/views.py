@@ -1,6 +1,8 @@
 from django.http import HttpResponse, FileResponse, JsonResponse, HttpResponseBadRequest
 from helloworld.correlation import *
 from helloworld.models import Stocks
+from django.views.decorators.csrf import csrf_exempt
+import json
 
 stocks = list(set(Stocks.objects.values_list('stock', flat=True)))
 
@@ -12,13 +14,14 @@ def getStockList(request):
     return JsonResponse(list(stocks), safe=False)
 
 # This endpoint returns an image, given the name of two stocks
+@csrf_exempt
 def getCorrelationGraph(request):
     
     stocks = []
 
     if request.method == "POST":
         print(request.POST)
-        stocks = request.POST
+        stocks = json.loads(request.POST["stocks"])
     elif request.method == "GET":
         stocks.append(request.GET["stock1"])
         stocks.append(request.GET["stock2"])
