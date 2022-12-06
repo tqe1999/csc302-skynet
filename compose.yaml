@@ -8,12 +8,14 @@ services:
       - "database.env"
     volumes: 
       - db:/var/lib/postgresql/data
+    restart: on-failure
   load_data:
     build: load_data/.
     env_file:
       - "database.env"
     depends_on:
     - db
+    restart: on-failure
   api:
     build: api/.
     ports: 
@@ -25,7 +27,7 @@ services:
       - load_data
     healthcheck:
       test: curl --fail http://api:8000 || exit 1   
-    retstart: on-failure
+    restart: on-failure
 
   app:
     build: app
