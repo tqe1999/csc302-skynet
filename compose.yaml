@@ -5,14 +5,14 @@ services:
     ports:
       - "15432:5432"
     env_file:
-      - "database.env"
+      - ".env"
     volumes: 
       - db:/var/lib/postgresql/data
     restart: on-failure
   load_data:
     build: load_data/.
     env_file:
-      - "database.env"
+      - ".env"
     depends_on:
     - db
     restart: on-failure
@@ -21,18 +21,23 @@ services:
     ports: 
       - "8000:8000"
     env_file:
-      - "database.env"
+      - ".env"
     depends_on:
       - db
       - load_data
     healthcheck:
       test: curl --fail http://api:8000 || exit 1   
+      retries: 10
+      interval: 1m
+      timeout: 20s
+      start_period: 1m
     restart: on-failure
 
   app:
     build: app
     ports:
       - "3000:3000"
+    restart: on-failure
 
   test:
     build: test/.
