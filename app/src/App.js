@@ -1,4 +1,4 @@
-import React, { Component } from 'react';
+import React, {Component, useState} from 'react';
 import logo from './logo.svg';
 import './App.css';
 import { Button } from 'primereact/button';
@@ -8,15 +8,15 @@ import "primeicons/primeicons.css";                                //icons
 import { Stockbar } from "./components/Stockbar"
 import { Maindisplay } from "./components/Maindisplay"
 
-class App extends Component {
-  render() {
+const App = () => {
+    const [selectedStocks, setSelectedStocks] = useState(null)
+
     return (
-      <div className="App" >
-        <Stockbar />
-        <Maindisplay />
-      </div >
-    );
-  }
+        <div className="App">
+            <Stockbar setSelectedStocks={setSelectedStocks}/>
+            <Maindisplay selectedStocks={selectedStocks}/>
+        </div>
+    )
 }
 
 export default App;
