@@ -25,6 +25,7 @@ services:
       - load_data
     healthcheck:
       test: curl --fail http://api:8000 || exit 1   
+    retstart: on-failure
 
   app:
     build: app
