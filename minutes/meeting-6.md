@@ -11,7 +11,7 @@ Absent: None
 | Meeting Item Type | Meeting Item                                             | Description                                                       |
 | ----------------- | -------------------------------------------------------- | ----------------------------------------------------------------- |
 | Review            | Show off the frotnend UI progress so far                 | Showing off the frontend through screenshare, collecting feedback |
-| Discuss           | Steps needed towards consolidating the front and backend |
+| Discuss           | Steps needed towards consolidating the front and backend | Discuss how we can connect the two components                     |
 | Decide            | Next meeting date                                        | This will be the meeting we create presentation materials         |
 
 ## Meeting Items Discussed
