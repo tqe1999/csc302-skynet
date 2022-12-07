@@ -30,7 +30,7 @@ export class Maindisplay extends Component {
     render() {
         if (this.state.image) {
             return (
-                <div className="maindisplay">
+                <div id="maindisplay">
                     <Image src={this.state.image} />
                 </div>
             )
