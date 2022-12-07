@@ -16,11 +16,11 @@
 
 #maindisplay {
   height: 100vh;
-  width: 80vw;
   background-color: #eff3f8;
   display: flex;
   align-items: center;
   justify-content: center;
+  width: 100%;
 }
 
 .stockComponent {
@@ -52,23 +52,26 @@
  * animation slide-left
  * ----------------------------------------
  */
- @-webkit-keyframes slide-left {
+@-webkit-keyframes slide-left {
   0% {
     -webkit-transform: translateX(0);
-            transform: translateX(0);
+    transform: translateX(0);
   }
+
   100% {
     -webkit-transform: translateX(-100px);
-            transform: translateX(-100px);
+    transform: translateX(-100px);
   }
 }
+
 @keyframes slide-left {
   0% {
     -webkit-transform: translateX(0);
-            transform: translateX(0);
+    transform: translateX(0);
   }
+
   100% {
     -webkit-transform: translateX(-100px);
-            transform: translateX(-100px);
+    transform: translateX(-100px);
   }
 }
