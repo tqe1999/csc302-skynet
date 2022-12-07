@@ -1,5 +1,5 @@
 import React, { Component } from 'react';
-import {Image} from "primereact/image"
+import { Image } from "primereact/image"
 export class Maindisplay extends Component {
 
     constructor(props) {
@@ -21,7 +21,7 @@ export class Maindisplay extends Component {
                 .then(res => res.blob())
                 .then(blob => {
                     const reader = new FileReader()
-                    reader.onload = () => this.setState({image: reader.result})
+                    reader.onload = () => this.setState({ image: reader.result })
                     reader.readAsDataURL(blob)
                 })
         }
@@ -31,14 +31,14 @@ export class Maindisplay extends Component {
         if (this.state.image) {
             return (
                 <div className="maindisplay">
-                    <Image src={this.state.image}/>
+                    <Image src={this.state.image} />
                 </div>
             )
         }
         return (
             <div id="maindisplay">
                 <i className="pi pi-arrow-left" style={{ 'fontSize': '2em' }}></i>
-                Select at least 2 stocks to get started
+                <h2>Select at least 2 stocks to get started</h2>
             </div>
         );
     }
