@@ -22,7 +22,7 @@ As long as at least 2 stocks have been selected, the application will fetch and 
 The correlation matrix will be a **n** by **n** matrix which shows how the **n** stocks selected correlate with each other on a scale of -1 to 1.
 
 ## Directories
-**Meeting notes** are in [/minutes](https://github.com/tqe1999/csc302-skynet/tree/main/minutes), **documentation** and **roadmap** are in [/documentation](https://github.com/tqe1999/csc302-skynet/tree/main/documentation).
+**Meeting notes** are in [/minutes](https://github.com/tqe1999/csc302-skynet/tree/main/minutes), **documentation** and **roadmap** are in [/documentation](https://github.com/tqe1999/csc302-skynet/blob/main/documentation/Presentation.pdf).
 
 ## Undelivered features
 Here is a list of our undelivered features.  This is based off our our documented list of features [here](https://github.com/tqe1999/csc302-skynet/blob/main/documentation/features.md).
