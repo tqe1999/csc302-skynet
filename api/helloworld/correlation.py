@@ -20,7 +20,7 @@ def get_correlation(df):
 
 
 def render_matrix(df):
-    matrix = seaborn.heatmap(df)
+    matrix = seaborn.heatmap(df, center=0, cmap="RdBu")
     buf = BytesIO()
     fig = matrix.get_figure()
     fig.savefig(buf, format='png')
