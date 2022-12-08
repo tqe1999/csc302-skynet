@@ -40,4 +40,4 @@ All in all, the absence of these features did not compromise the minimum viable 
 
 
 ## For assignment 3
-The **blameless postmortem for assignment 2** can be found [here](https://github.com/tqe1999/csc302-skynet/blob/main/documentation/blameless-postmortem-2.md). The **presentation materials** can be found [here] (https://github.com/tqe1999/csc302-skynet/blob/main/documentation/Presentation.pdf)
+The **blameless postmortem for assignment 2** can be found [here](https://github.com/tqe1999/csc302-skynet/blob/main/documentation/blameless-postmortem-2.md). The **presentation materials** can be found [here](https://github.com/tqe1999/csc302-skynet/blob/main/documentation/Presentation.pdf)
