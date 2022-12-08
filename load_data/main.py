@@ -48,7 +48,7 @@ inspector = Inspector.from_engine(db)
 
 if "stocks" in inspector.get_table_names():
     logger.info("already initialized")
-    sys.exit("already initialized")
+    sys.exit(0)
 
 metadata = MetaData()
 
