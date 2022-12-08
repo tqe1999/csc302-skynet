@@ -50,7 +50,7 @@ export class Stockbar extends Component {
             // note: we are adding a key prop here to allow react to uniquely identify each
             // element in this array. see: https://reactjs.org/docs/lists-and-keys.html
             rows.push(<div key={i} className='stockComponent'>
-                <Dropdown value={this.state.dropdowns[i]} options={stockOptions} onChange={e => this.updateDropdown(i, e.value)} placeholder="Select a Stock"/>
+                <Dropdown value={this.state.dropdowns[i]} options={stockOptions} onChange={e => this.updateDropdown(i, e.value)} filter placeholder="Select a Stock"/>
                 <Button icon="pi pi-times" className="p-button-rounded p-button-danger p-button-text" aria-label="Cancel" onClick={() => this.deleteDropdown(i)}/>
             </div>);
         }
