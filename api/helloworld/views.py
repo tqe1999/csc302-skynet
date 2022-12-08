@@ -17,7 +17,7 @@ def getStockList(request):
         stocks = list(set(Stocks.objects.values_list('stock', flat=True)))
     except Exception as e:
         logger.warning(f"request failed with exception {e}")
-    return JsonResponse(list(stocks), safe=False)
+    return JsonResponse(sorted(list(stocks)), safe=False)
 
 # This endpoint returns an image, given the name of two stocks
 @csrf_exempt
