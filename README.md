@@ -13,9 +13,9 @@ We've decided to present the dataset this way because we want to present the dat
 Our idea is to takes multiple stocks, do some mathematical comparions behind the scenes, and then to funnel it back to the user in a visually rich manner (the matrix).
 
 ## User Guide
-Run **install-env.sh** to install the environment (Docker), then **build.sh** to build and run the application, and **test.sh** to test the application's API.
+Run **install-env.sh** to install the environment (Docker), then **build.sh** to build the application, and **test.sh** to run and test the application's API.
 
-After building the application, go to http://localhost:3000/ to open the frontend.  The user will be prompted to add at least 2 stocks.  Click the **"Add Stock +"** button to add a dropdown menu, and select from the list of stocks.
+After running the application, go to http://localhost:3000/ to open the frontend.  The user will be prompted to add at least 2 stocks.  Click the **"Add Stock +"** button to add a dropdown menu, and select from the list of stocks.
 
 As long as at least 2 stocks have been selected, the application will fetch and display the correlation matrix associated with thos stocks.  This fetching and displaying process is automatic, and any stocks which were de-selected, deleted, or added will trigger this fetching and displaying process.
 
@@ -40,4 +40,4 @@ All in all, the absence of these features did not compromise the minimum viable 
 
 
 ## For assignment 3
-The **blameless postmortem for assignment 2** can be found [here](https://github.com/tqe1999/csc302-skynet/blob/main/documentation/blameless-postmortem-2.md).
+The **blameless postmortem for assignment 2** can be found [here](https://github.com/tqe1999/csc302-skynet/blob/main/documentation/blameless-postmortem-2.md). The **presentation materials** can be found [here] (https://github.com/tqe1999/csc302-skynet/blob/main/documentation/presentation.pdf)
